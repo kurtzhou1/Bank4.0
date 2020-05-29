@@ -1,19 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import dataButtom from './components/dataMap';
-
-
-const Bank = () => {
-
-
-
-  return(
-  <div className='bank40'>{dataButtom}</div>
-  )
-}
-
+import DataButtom from './components/dataMap';
 
 ReactDOM.render(
-    <Bank />,
+    <DataButtom />,
   document.getElementById('root')
 );
