@@ -23,7 +23,7 @@ import './styles/styles.scss'
 // }, [index])
 
 const DataButtom=()=> {
-  const buttom = ['支付','保險','存貸','籌資','投資管理','市場資訊供應']
+  const buttom = ['支付','保險','存貸','籌資','投資管理','會員資料']
   const [index , setindex] = useState('7') 
 
   console.log('index=>',index)
@@ -64,7 +64,14 @@ const DataButtom=()=> {
             <div>自己選</div>
             <div>AI智能機器人選股</div>
           </div>
-          <div className={index === 5 ? 'show5':'noshow'}>6</div>
+          <div className={index === 5 ? 'show5':'noshow'}>
+            <div>會員登入</div>
+            <div>帳號</div>
+            <input type='text' />
+            <div>密碼</div>
+            <input type='text' />
+            <div>使用指紋或臉部辨識登入</div>
+          </div>
           <div>Bank4.0</div>
         </div>
         <div className='content'>{dataMap}</div>
