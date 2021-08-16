@@ -1,0 +1,44 @@
+//環境設定_暫時
+html, body, #root {
+    width: 100%;
+    height: auto;
+    .wrapper {
+        width: 100%;
+        // height: 100%;
+        .wrapper-body {
+        width: 100%;
+        // height: 90%;
+        }
+    }
+}
+
+.template_Youtube{
+    .searchBar{
+        button{
+            width: 65px;
+            border: 1px solid #d3d3d3;
+            &:hover{
+                background-color: #c6c6c6;
+            }
+        }
+    }
+    >.ui.grid.m-3{
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        >div{
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+    }
+    .video-item{
+        display: flex !important;
+        align-items: center !important;
+        cursor: pointer;
+    }
+    
+    .video-item.item img{
+        max-width: 180px;
+    }
+}
+
+
