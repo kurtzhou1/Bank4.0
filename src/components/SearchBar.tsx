@@ -3,13 +3,12 @@ import {
     MDBIcon
   } from "mdbreact";
 
-const SearchBar = (props:any) => {
+const SearchBar = ({makeSearch}:any) => {
 
-    const {makeSearch} = props;
     const [ keyWord , setKeyWord ] = useState('');
 
-    const search = (e:any) => {
-        e.e.preventDefault();
+    const search = (e:any):void => {
+        e.preventDefault();
         makeSearch(keyWord);
     }
 

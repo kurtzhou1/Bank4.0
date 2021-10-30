@@ -1,21 +1,5 @@
 import React  from 'react';
-import {
-    MDBInput,
-    MDBContainer, 
-    MDBRow, 
-    MDBCol, 
-    MDBBtnGroup,
-    MDBBtn,
-    MDBDropdown,
-    MDBDropdownToggle,
-    MDBDropdownMenu,
-    MDBDropdownItem,
-    // MDBCard,
-    // MDBCardBody,
-    // MDBCardFooter,
-    MDBIcon,
-    MDBAnimation,
-  } from "mdbreact";
+
 
 const VideoView = (props:any) => {
     const { vedioSelect } = props;
