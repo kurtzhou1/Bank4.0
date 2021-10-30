@@ -8,8 +8,8 @@ const SearchBar = ({makeSearch}:any) => {
     const [ keyWord , setKeyWord ] = useState('');
 
     const search = (e:any):void => {
-        e.preventDefault();
         makeSearch(keyWord);
+        e.preventDefault();
     }
 
     return(
