@@ -1,5 +1,6 @@
 {
   "name": "bank4.0",
+  "homepage": "https://kurtzhou1.github.io/mySelf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
+    "gh-pages": "^3.2.3",
     "mdbreact": "^5.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -17,6 +19,8 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start --declaration",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -20,7 +20,7 @@ const APP = () => {
     }
 
     useEffect(()=>{
-        makeSearch('coffee music');
+        makeSearch('白噪音');
     },[])
 
     return(
@@ -28,10 +28,10 @@ const APP = () => {
             <SearchBar makeSearch={makeSearch}/>
             <div className="ui grid m-3">
                 <div className="ui row">
-                    <div className="eleven wide column">
+                    <div className="main wide column">
                     <VideoView vedioSelect={vedioSelect}/>
                     </div>
-                    <div className="five wide column">
+                    <div className="second wide column">
                     <VideoList
                         vedioList={vedioList}
                         setVedioSelect={setVedioSelect}
